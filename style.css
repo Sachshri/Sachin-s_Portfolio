@@ -60,6 +60,10 @@ nav{
 /* .navList{
    border: 2px solid red;
 } */
+#bar{
+    display: none;
+    /* visibility: hidden; */
+}
 .menu ul{
     list-style-type: none;
     display: flex;
@@ -93,18 +97,12 @@ nav{
 }
 .menuBar{
     display: none;
+
 }
+
+
 .bottomenu{
-    position: fixed;
-    top: calc(100vh - 86px);
-    z-index: 1000;
-    background-color:#fffaff;
-    border:2px solid cornflowerblue;
-    width: 100%;
-    height: 86px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    display: none;
  }
  .bottomenu div{
      text-align: center;
@@ -126,22 +124,20 @@ nav{
     position: relative;
 }
 
-.menu_ele a::after {
+.menuBar ul li a::after{
     content: "";
     display: block;
     position: absolute;
-    left: -3px;
     bottom: -5px;
-    width: 150%;
-    height: 2px; 
+    width: 100%;
+    height: 2px;
     background-color: #3498db;
     transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: transform 0.3s ease; 
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-in-out;
 }
-
-.menu_ele a:hover::after{
-    transform: scaleX(150%);
+.menuBar ul li a:hover::after{
+    transform:scaleX(1);
 }
 .content{
     display: flex;
@@ -178,14 +174,14 @@ nav{
 #bgoimg img{
     /* width:70% ; */                          
     height: 50%;
-    border:2.5vmin solid pink;
+    border:2.0vmin solid pink;
     border-radius: 50%;
 }
 #lines{
     width: 20%;
     border: 0.2em solid black;
     border-radius: 50%;
-    margin-block:2em ;
+    margin-block:1em ;
 }
 #sl{
     margin-top: 7px;
@@ -258,7 +254,7 @@ background-color: rgb(255, 255, 255);
     display: flex;
     /* flex-direction: column; */
     align-items: center;
-    margin-bottom: 86px;
+    /* margin-bottom: 86px; */
     padding: 10px;
     justify-content: space-around;
     color: rgb(0, 0, 0);
@@ -271,9 +267,11 @@ background-color: rgb(255, 255, 255);
     justify-content:space-around;
 }
 /* --------------------This is for size less or equal to 1110px -------------*/
-@media screen and (max-width:1110px){
+@media screen and (max-width:900px){
     body{
         background-color:rgb(246, 226, 250);
+        margin: 0;
+        padding: 0;
     }
     nav{
         z-index: 1;
@@ -321,25 +319,81 @@ background-color: rgb(255, 255, 255);
     }
     
     .header_name{
-        font-size: large;
+        font-size: 2em;
         font-family: 'Poppins', sans-serif;
         font-weight:900;
-   }
-   /* .navList{
-       border: 2px solid red;
+    }
+    /* .navList{
+        border: 2px solid red;
     } */
     .menu{
         display: none;
     }
+    #bar{
+        display: inline-block!important;
+        font-size: 2em;
+        cursor:pointer;
+    }
     .menuBar{
+        float:left;
+        position: fixed;
+        font-size: 1rem;
+        background-color: #faf3f4eb;
+        display: none;
+        z-index: 9;
+        width: 100vw;
+        height: 100vh;
+        animation:comeIn 1s ease-in-out;
+    }
+
+    @keyframes comeIn {
+        from {
+            transform: translateX(-100%);
+        }
+        to {
+            transform: translateX(0);
+        }    
+    }
+   .cross{
+        animation: goback 1s ease-in-out;
+    }
+    @keyframes goback {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-100%);
+        }    
+    }
+    .menuBar ul{
         display: flex;
-        font-size: 1.4em;
-        font-weight: bold;
+        flex-direction: column;
+        align-items: center;
+        list-style-type:none;
+        padding: 20% 3em 0 3em;
+    } 
+    .menuBar ul li{
+        line-height:10vmax;
+    }
+    
+    .menuBar ul li a{
+        font-family: 'Alegreya Sans SC', sans-serif; 
+        /* width: 100%; */
+        text-decoration: none;
+        color: black;
     }
     /* .test{
         height: 100vh;
         background-color: aqua;
     } */
+    #crossbar{
+        
+        position: relative;
+        font-size: 2em;
+        cursor: pointer;
+        left: 7%;
+        top: 5%;
+    }
     .content{
         display: flex;
         flex-direction: column;
@@ -389,19 +443,19 @@ background-color: rgb(255, 255, 255);
     #sl{
         margin-top: 25px;
     }
-.intro{
-    padding: 0%;
-    display: flex;
-    flex-direction: column;
+    .intro{
+        padding: 0%;
+        display: flex;
+        flex-direction: column;
         /* background-color: rgb(250, 215, 241); */
-}
-.intro p{
-    font-stretch: extra-condensed;
-    font-family: 'Genos', monospace;;
-}
-#aboutme{
-    padding-top:20px;
-}
+    }
+    .intro p{
+        font-stretch: extra-condensed;
+        font-family: 'Genos', monospace;;
+    }
+    #aboutme{
+        padding-top:20px;
+    }
 .links{
     /* border: 2px red solid; */
     color: ivory;
@@ -481,43 +535,43 @@ background-color: rgb(255, 255, 255);
     align-items: center;
  }
  .bottomenu div{
-     text-align: center;
-    font-size: 0.6em;
-    font-family: "poppins",sans-serif;
-    
-    height: 60%;
-    width: auto;
- }
+    text-align: center;
+   font-size: 0.6em;
+   font-family: "poppins",sans-serif;
+   
+   height: 60%;
+   width: auto;
+}
 
- .menu_ele {
-    position: relative;
-    display: block;
-    margin: 0;
+.menu_ele {
+   position: relative;
+   display: block;
+   margin: 0;
 }
 
 .menu_ele a {
-    text-decoration: none;
-    color: #333; 
-    font-family: 'Alegreya Sans SC', sans-serif; 
-    position: relative;
+   text-decoration: none;
+   color: #333; 
+   font-family: 'Alegreya Sans SC', sans-serif; 
+   position: relative;
 }
 
 .menu_ele a::after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: -12px;
-    bottom: -5px;
-    width: 100%;
-    height: 2px; 
-    background-color: #3498db;
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: transform 0.3s ease; 
+   content: "";
+   display: block;
+   position: absolute;
+   left:10px;
+   bottom: -5px;
+   width: 100%;
+   height: 2px; 
+   background-color: #3498db;
+   transform: scaleX(0);
+   transform-origin: bottom right;
+   transition: transform 0.3s ease; 
 }
 
 .menu_ele a:hover::after{
-    transform: scaleX(150%);
-    transform-origin: bottom left;
+   transform: scaleX(250%);
+   
 }
 }
