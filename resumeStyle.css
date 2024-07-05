@@ -95,11 +95,10 @@ nav{
 .menu ul li a:hover::after{
     transform:scaleX(1);
 }
+
 .menuBar{
     display: none;
-
 }
-
 
 .bottomenu{
     display: none;
@@ -131,7 +130,7 @@ nav{
     bottom: -5px;
     width: 100%;
     height: 2px;
-    background-color: #3498db;
+    background-color: rgb(52, 152, 219);
     transform: scaleX(0);
     transform-origin: bottom left;
     transition: transform 0.3s ease-in-out;
@@ -139,123 +138,139 @@ nav{
 .menuBar ul li a:hover::after{
     transform:scaleX(1);
 }
-.content{
+#heading{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif; 
+    background-color:rgb(192, 194, 255) ;
+    padding-block: 2%;
+    text-align: center;
+    
 }
-.images{
-    display:flex;
+#heading i{
     position: relative;
-    flex-direction: column;
-    height:calc(100vh + 190px);
-    width: 40vmax;
-    font-family: 'Poppins',sans-serif;
-    /* justify-content: center; */
-    /* gap: 5px; */
-    align-items: center;
-    background-color: rgb(255, 230, 233);                                 
-    /* border: 2px solid red; */
-}   
-#bgoimg{
-    box-sizing: content-box;
-    position: sticky;
-    top: 68px;
-    /* border: 2px solid red; */ 
-    height:min(35vmax,50%);                
-    width:30vmax;
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    /* justify-content: center; */
-    padding-top: 30px;
-    align-items: center;
-    padding-inline: 4%;
-    background-color: rgb(250, 243, 244);
+    font-size: larger;
+    left: 25%;
+    cursor: pointer;
 }
-#bgoimg img{
-    /* width:70% ; */                          
-    height: 50%;
-    border:2.0vmin solid pink;
-    border-radius: 50%;
-}
-#lines{
-    width: 20%;
-    border: 0.2em solid black;
-    border-radius: 50%;
-    margin-block:1em ;
-}
-#sl{
-    margin-top: 7px;
-}
-.intro{
-    padding:2em;
-    width: 60%;
-    height: auto;               
-    display: flex;
-    flex-direction: column;
-    align-items:center ;
-    /* background-color: rgb(250, 215, 241); */
-}
-.intro p{
-font-stretch: extra-condensed;
-font-family: 'Genos', monospace;;
+.content{
+    padding: 0 3em;
 }
 
-.links{
-/* border: 2px red solid; */
-color: ivory;
-font-family: 'Genos', Arial, sans-serif;
-font-size:1.25em ;
-width: 100%;
-height: 250px;
-display: flex;
-margin-block: 2em;
-/* flex-direction: column; */
-justify-content:space-evenly ;
-align-items: center;
-/* gap: 4px; */
+.nameInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.links div{
-display: flex;             
-justify-content: center;
-align-items: center;
-text-decoration:none ;
-height:170px;
-width:170px ;
-border: 1px solid black;
+#Name
+{
+    font-size: larger;
+    font-family: 'Poppins', sans-serif; 
+}
+#info{
+    padding: 1em;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+}
+#info{
+font-family: 'Genos',sans-serif;
+}
+#info p i{
+font-weight: 500;
+}
+#info p img{
+height: 0.8em;
+}
+#sachimg{
+border: 1em solid pink;
 border-radius: 50%;
-text-align: center;
-flex-wrap: wrap;
-cursor: pointer;
+height: 40vmin;
+width: 40vmin;
 }
-.links div a{
-text-decoration: none;
-color:black;
+.coninfo{
+font-family: 'Genos',sans-serif;
+padding: 1em;
+border-bottom:2px solid #3498db;
+
 }
-.resume{
-background-color: orange;
-/* margin-right: 50px; */
+.coninfo h3{
+text-decoration: underline;
 }
-.project{
-/* margin-right: 50px; */
-background-color: rgb(102, 255, 0);
+#Objective p{
+text-indent: 2em;
 }
-.contact{
-background-color: cornflowerblue;
+.simage{
+display: flex;
+justify-content: center;
 }
-.resume:hover{
-background-color: rgb(255, 255, 255);
+.Sclimg{
+border: 2vmin solid rgb(205, 164, 235);
+border-radius:2vmin;
+width: 80%;
+/* padding:2vmax ; */
 }
-.contact:hover{
-background-color: rgb(255, 255, 255);
+.clgimg{
+display: flex;
+justify-content: center;
+flex-direction: column;
 }
-.project:hover{
-background-color: rgb(255, 255, 255);
+#clgimage{
+height: 80%;
+margin-top:2em ;
 }
+.tskill
+{
+display: flex;
+align-items: center;
+}
+#htmlindi{
+border:2px solid rgb(135, 135, 243);
+height:0 ;
+width: 70vw;
+}
+#cssindi{
+border:2px solid rgb(135, 135, 243);
+height:0 ;
+width: 70vw;
+}
+#jsindi{
+border:2px solid rgb(135, 135, 243);
+height:0 ;
+width: 60vw;
+}
+#dsaindi{
+border:2px solid rgb(135, 135, 243);
+height: 0;
+width: 60vw;
+}
+
+.Foot{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 0px;
+padding: 10px;
+justify-content: space-around;
+color: rgb(0, 0, 0);
+background-color: rgb(245, 179, 219);
+font-family:'Genos', sans-serif;
+font-weight: light;
+}
+.social_accounts div{
+display: flex;
+justify-content:space-around;
+}
+.bottomenu{
+    display: none;
+}
+
 .Foot{
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
-    /* margin-bottom: 86px; */
     padding: 10px;
     justify-content: space-around;
     color: rgb(0, 0, 0);
@@ -268,6 +283,7 @@ background-color: rgb(255, 255, 255);
     justify-content:space-around;
 }
 /* --------------------This is for size less or equal to 900px -------------*/
+
 @media screen and (max-width:900px){
     body{
         background-color:rgb(246, 226, 250);
@@ -301,7 +317,7 @@ background-color: rgb(255, 255, 255);
         border-radius: 50%;
         display: flex;
         flex-direction: column;
-        /* justify-content: ; */
+      
         align-items: center;
     }
     #SN {
@@ -324,17 +340,16 @@ background-color: rgb(255, 255, 255);
         font-family: 'Poppins', sans-serif;
         font-weight:900;
     }
-    /* .navList{
-        border: 2px solid red;
-    } */
+    
     .menu{
         display: none;
     }
     #bar{
-        display: inline-block!important;
+        display: inline-block;
         font-size: 2em;
         cursor:pointer;
     }
+    
     .menuBar{
         float:left;
         position: fixed;
@@ -346,7 +361,7 @@ background-color: rgb(255, 255, 255);
         height: 100vh;
         animation:comeIn 1s ease-in-out;
     }
-
+    
     @keyframes comeIn {
         from {
             transform: translateX(-100%);
@@ -355,7 +370,7 @@ background-color: rgb(255, 255, 255);
             transform: translateX(0);
         }    
     }
-   .cross{
+    .cross{
         animation: goback 1s ease-in-out;
     }
     @keyframes goback {
@@ -379,14 +394,11 @@ background-color: rgb(255, 255, 255);
     
     .menuBar ul li a{
         font-family: 'Alegreya Sans SC', sans-serif; 
-        /* width: 100%; */
+  
         text-decoration: none;
         color: black;
     }
-    /* .test{
-        height: 100vh;
-        background-color: aqua;
-    } */
+  
     #crossbar{
         
         position: relative;
@@ -396,119 +408,104 @@ background-color: rgb(255, 255, 255);
         left: 7%;
         top: 5%;
     }
-    .content{
+    
+    #heading{
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
+        font-family: 'Poppins', sans-serif; 
+        background-color:rgb(192, 194, 255) ;
+        padding-block: 2%;
+        text-align: center;
+
     }
-    .images{
-        display:flex;
+    #heading i{
         position: relative;
-        flex-direction: column;
-        height:calc(100vh - 60px - 50px);
-        width: 100vw;
-        font-family: 'Poppins',sans-serif;
-        /* justify-content: center; */
-        /* gap: 5px; */
-        align-items: center;
-        background-color: rgb(255, 230, 233);
-        /* border: 2px solid red; */
+        font-size: larger;
+        left: 25%;
+        cursor: pointer;
     }
-    #bgoimg{
-        box-sizing: content-box;
-        position: sticky;
-        top: 20px;
-        /* border: 2px solid red; */
-        height: 70%;
-        width:75%;
-        display:flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        /* justify-content: center; */
-        padding-top: 30px;
-        align-items: center;
-        padding-inline: 4%;
-        background-color: rgb(250, 243, 244);
+    .content{
+        padding: 0 2em;
     }
-    #bgoimg img{
-        /* width:70% ; */
-        height: 45%;
-        border:2.5vmin solid pink;
-        border-radius: 50%;
+    #Name
+    {
+        font-size: larger;
+        font-family: 'Poppins', sans-serif; 
     }
-    #lines{
-        width: 20%;
-        border: 0.2em solid black;
-        border-radius: 50%;
-        margin-block:2em ;
-    }
-    #sl{
-        margin-top: 25px;
-    }
-    .intro{
-        padding: 0%;
+    .nameInfo{
         display: flex;
         flex-direction: column;
-        /* background-color: rgb(250, 215, 241); */
+        align-items: center;
     }
-    .intro p{
-        font-stretch: extra-condensed;
-        font-family: 'Genos', monospace;;
-    }
-    #aboutme{
-        padding-top:20px;
-    }
-.links{
-    /* border: 2px red solid; */
-    color: ivory;
-    font-family: 'Genos', Arial, sans-serif;
-    font-size:1.25em ;
-    width: 100vw;
-    height: 20vh;
-    display: flex;
-    margin-block: 0em;
-    /* flex-direction: column; */
-    justify-content:space-evenly ;
-    align-items: center;
-    /* gap: 4px; */
-}
-.links div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration:none ;
-    height:20vw;
-    width:20vw ;
-    border: 1px solid black;
+  
+   #info{
+    font-family: 'Genos',sans-serif;
+   }
+
+#sachimg{
+    border: 1em solid pink;
     border-radius: 50%;
-    text-align: center;
-    flex-wrap: wrap;
+    height: 40min;
+    width: 40vmin;
 }
-.links div a{
-    text-decoration: none;
-    color:black;
+.coninfo{
+    font-family: 'Genos',sans-serif;
+    padding: 1em;
+   
+}
+.coninfo h3{
+    text-decoration: underline;
     
 }
-#resume{
-    background-color: orange;
-    /* margin-right: 50px; */
+#Objective p{
+    text-indent: 2em;
 }
-#project{
-    /* margin-right: 50px; */
-    background-color: rgb(102, 255, 0);
+.simage{
+    display: flex;
+    justify-content: center;
 }
-#contact{
-    background-color: cornflowerblue;
+.Sclimg{
+    border: 2vmin solid rgb(205, 164, 235);
+    border-radius:2vmin;
+    width: 80%;
+    /* padding:2vmax ; */
 }
-#resume a:hover,#resume:hover{
-    background-color: rgb(255, 255, 255);
+.clgimg{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
-#contact:hover{
-    background-color: rgb(255, 255, 255);
+#clgimage{
+    height: 80%;
+    margin-top:2em ;
 }
-#project:hover{
-    background-color: rgb(255, 255, 255);
+.tskill
+{
+    display: flex;
+    align-items: center;
 }
+#htmlindi{
+    border:2px solid rgb(135, 135, 243);
+    height:0 ;
+    width: 70vw;
+}
+#cssindi{
+    border:2px solid rgb(135, 135, 243);
+    height:0 ;
+    width: 70vw;
+}
+#jsindi{
+    border:2px solid rgb(135, 135, 243);
+    height:0 ;
+    width: 60vw;
+}
+#dsaindi{
+    border:2px solid rgb(135, 135, 243);
+    height: 0;
+    width: 60vw;
+}
+
 .Foot{
     display: flex;
     flex-direction: column;
@@ -536,95 +533,44 @@ background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
- }
- .bottomenu div{
+}
+.bottomenu div{
     text-align: center;
-   font-size: 0.6em;
-   font-family: "poppins",sans-serif;
-   
-   height: 60%;
-   width: auto;
+    font-size: 0.6em;
+    font-family: "poppins",sans-serif;
+    
+    height: 60%;
+    width: auto;
 }
 
 .menu_ele {
-   position: relative;
-   display: block;
-   margin: 0;
+    position: relative;
+    display: block;
+    margin: 0;
 }
 
 .menu_ele a {
-   text-decoration: none;
-   color: #333; 
-   font-family: 'Alegreya Sans SC', sans-serif; 
-   position: relative;
+    text-decoration: none;
+    color: #333; 
+    font-family: 'Alegreya Sans SC', sans-serif; 
+    position: relative;
 }
 
 .menu_ele a::after {
-   content: "";
-   display: block;
-   position: absolute;
-   left:10px;
-   bottom: -5px;
-   width: 100%;
-   height: 2px; 
-   background-color: #3498db;
-   transform: scaleX(0);
+    content: "";
+    display: block;
+    position: absolute;
+    left:10px;
+    bottom: -5px;
+    width: 100%;
+    height: 2px; 
+    background-color: #3498db;
+    transform: scaleX(0);
    transform-origin: bottom right;
    transition: transform 0.3s ease; 
 }
 
 .menu_ele a:hover::after{
-   transform: scaleX(250%);
-   
+    transform: scaleX(250%);
 }
-}
-@media screen and (max-height:800px){
-    .links{
-        
-        color: ivory;
-        font-family: 'Genos', Arial, sans-serif;
-        font-size:1.25em ;
-        width: 60vw;
-        height: 20vw;
-        display: flex;
-        margin-block: 0em;
-       
-        justify-content:space-evenly ;
-        align-items: center;
-
-    }
-    .links div{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration:none ;
-        height:50%;
-        width:20% ;
-        border: 1px solid black;
-        border-radius: 50%;
-        text-align: center;
-        flex-wrap: wrap;
-    }
-    .links div a{
-        text-decoration: none;
-        color:black;
-    }
-    #resume{
-        background-color: orange;
-    }
-    #project{
-        background-color: rgb(102, 255, 0);
-    }
-    #contact{
-        background-color: cornflowerblue;
-    }
-    #resume a:hover,#resume:hover{
-        background-color: rgb(255, 255, 255);
-    }
-    #contact:hover{
-        background-color: rgb(255, 255, 255);
-    }
-    #project:hover{
-        background-color: rgb(255, 255, 255);
-    }
 }

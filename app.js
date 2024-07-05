@@ -1,6 +1,6 @@
 const Bar=document.querySelector('#bar');
 const menuBar=document.querySelector('.menuBar');
-const closeBar=document.querySelector('#crossbar');
+const closeBar=document.querySelector('.fa-circle-xmark');
 
 
 Bar.addEventListener('click',()=>{

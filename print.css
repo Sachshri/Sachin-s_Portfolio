@@ -1,0 +1,89 @@
+.menuBar,.bottomenu,nav,.Foot,#heading,.clgimg,.simage,.notpri{
+    display:none;
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.nameInfo{
+    font-family: 'Poppins', sans-serif; 
+    /* border: 2px solid red; */
+    width: 30vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    background-color: rgb(144, 144, 251);
+    border-radius: 20px;
+}
+#sachimg{
+    
+    border: 1em solid pink;
+    border-radius: 50%;
+    height: 20vmin;
+    width: 20vmin;
+}
+#Name{
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration:none!important;
+}
+#info p img{
+    height: 1em;
+}
+section{
+  display: flex;
+
+}
+
+.content{
+    display: flex;
+    font-family: "Genos",sans-serif;
+    padding: 10px 0 0 10px;
+    flex-direction: column;
+}
+.cont
+{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 0 20px;
+    font-size:1em ;
+    
+}
+
+.coninfo{
+    padding: 0;
+    border: none;
+}
+.tskill
+{
+    display: flex;
+    align-items: center;
+    /* font-size: 0.5em; */
+}
+#htmlindi{
+    border:2px solid rgb(135, 135, 243);
+    height:0 ;
+    width: 68%;
+}
+#cssindi{
+    border:2px solid rgb(135, 135, 243);
+    height:0 ;
+    width: 70%;
+}
+#jsindi{
+    border:2px solid rgb(135, 135, 243);
+    height:0 ;
+    width: 60%;
+}
+#dsaindi{
+    border:2px solid rgb(135, 135, 243);
+    height: 0;
+    width: 55%;
+}
+.coninfo h2{
+    border-bottom: 1px solid rgb(172, 196, 252);
+}
