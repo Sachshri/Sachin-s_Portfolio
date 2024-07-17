@@ -24,5 +24,7 @@ window.addEventListener('resize',()=>{
     menuBar.style.display="none";
     Bar.style.display="none";
 })
-
+function printFunction(){
+    window.print();
+}
 

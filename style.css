@@ -34,7 +34,6 @@ nav{
     border-radius: 50%;
     display: flex;
     flex-direction: column;
-    /* justify-content: ; */
     align-items: center;
 }
 #SN {
@@ -255,13 +254,14 @@ background-color: rgb(255, 255, 255);
     display: flex;
     /* flex-direction: column; */
     align-items: center;
-    /* margin-bottom: 86px; */
+    /* margin-top: 20px; */
     padding: 10px;
     justify-content: space-around;
     color: rgb(0, 0, 0);
     background-color: rgb(245, 179, 219);
     font-family:'Genos', sans-serif;
     font-weight: light;
+
 }
 .social_accounts div{
     display: flex;
